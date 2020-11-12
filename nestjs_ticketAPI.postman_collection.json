@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "538a6e92-ebe2-4b8e-9a65-45e030a97ea3",
+		"name": "nestjs_ticketAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/ticket/5fac9dc134b1620bd095bc3b",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/ticket/5fac9dc134b1620bd095bc3b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ticket",
+						"5fac9dc134b1620bd095bc3b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/details/open",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/details/open",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"open"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/details/close",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/details/close",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"close"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"seat_no\":1,\r\n     \"is_available\":\"false\",\r\n     \"passenger\":{\r\n         \"name\":\"Akhil\",\r\n         \"gender\":\"male\",\r\n         \"age\":19,\r\n         \"phone\":\"9750731239\",\r\n         \"email\":\"akhilarthi12@gmail.com\"\r\n     }\r\n       \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/ticket",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/ticket/5face5c86af47b0bac9b6003",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n     \"is_available\":\"false\",\r\n     \"passenger\":{\r\n         \"name\":\"sri hariharan\",\r\n         \"gender\":\"male\",\r\n         \"age\":21,\r\n         \"phone\":\"9203841919\",\r\n         \"email\":\"srihari123@gmail.com\"\r\n     }\r\n     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/ticket/5face5c86af47b0bac9b6003",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ticket",
+						"5face5c86af47b0bac9b6003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/details/5face5c86af47b0bac9b6003",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/details/5face5c86af47b0bac9b6003",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"5face5c86af47b0bac9b6003"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/details/reset",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/details/reset",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"details",
+						"reset"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
