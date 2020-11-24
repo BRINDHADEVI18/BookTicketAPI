@@ -17,6 +17,11 @@ export class DetailsController{
            
         return this.detailService.openTickets();               
      }
+      @Get('tickets')
+     getAllTickets()
+     {
+         return this.detailService.AllTickets();
+     }
      @Get('reset')
      resetServer()
      {
