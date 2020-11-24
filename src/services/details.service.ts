@@ -14,7 +14,16 @@ export class DetailsService{
 
     }
 
+ async AllTickets()
+   {
+       const tickets=await this.ticketModel.find({}).exec();
+       if(!tickets)
+       {
+           throw new NotFoundException('No tickets are opened!!');
+       }
+       return tickets.map((ticket)=>({ticket_id:ticket._id,seat_no:ticket.seat_no,is_available:ticket.is_available,passenger:ticket.passenger}));
 
+   }
 
    async passengerDetails(ticket_id:string,)
    {
